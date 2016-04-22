@@ -14,8 +14,8 @@ def getDataSet(name='abalone'):
         data = np.loadtxt(open("./Datasets/Large/abalone.data.txt","rb"),delimiter=",", dtype='|S4')
 
         data[np.where(data[:,0] == 'M'),0] = '0.'
-        data[np.where(data[:,0] == 'F'),0] = '1.'
-        data[np.where(data[:,0] == 'I'),0] = '2.'
+        data[np.where(data[:,0] == 'I'),0] = '1.'
+        data[np.where(data[:,0] == 'F'),0] = '2.'
 
         data = data.astype(np.float)
 
@@ -30,9 +30,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,l*i//4)) + list(xrange(l*(i+1)//4,l)))
-            rng_te = np.array(list(xrange(l*i//4, l*(i+1)//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -57,8 +57,8 @@ def getDataSet(name='abalone'):
         y_te = []
 
         for i in range(4):
-            rng_tr = np.array(list(xrange(0,l*i//4)) + list(xrange(l*(i+1)//4,l)))
-            rng_te = np.array(list(xrange(l*i//4, l*(i+1)//4)))
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -80,9 +80,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,(l*i)//4)) + list(xrange((l*(i+1))//4,l)))
-            rng_te = np.array(list(xrange((l*i)//4, (l*(i+1))//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -104,9 +104,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,(l*i)//4)) + list(xrange((l*(i+1))//4,l)))
-            rng_te = np.array(list(xrange((l*i)//4, (l*(i+1))//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -139,9 +139,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,(l*i)//4)) + list(xrange((l*(i+1))//4,l)))
-            rng_te = np.array(list(xrange((l*i)//4, (l*(i+1))//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -176,9 +176,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,(l*i)//4)) + list(xrange((l*(i+1))//4,l)))
-            rng_te = np.array(list(xrange((l*i)//4, (l*(i+1))//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
@@ -202,9 +202,9 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(4):
-            rng_tr = np.array(list(xrange(0,(l*i)//4)) + list(xrange((l*(i+1))//4,l)))
-            rng_te = np.array(list(xrange((l*i)//4, (l*(i+1))//4)))
+        for i in range(l//1000 - 1):
+            rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
+            rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
             x_te.append(data[rng_te,:-1])
             y_tr.append(data[rng_tr,-1])
