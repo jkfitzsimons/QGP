@@ -30,7 +30,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -56,7 +56,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -80,7 +80,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -104,7 +104,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -139,7 +139,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -176,7 +176,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
@@ -202,7 +202,7 @@ def getDataSet(name='abalone'):
         y_tr = []
         y_te = []
 
-        for i in range(l//1000 - 1):
+        for i in range(10):#l//1000 - 1):
             rng_tr = np.linspace(i*1000, (i+1)*1000-1, 1000).astype(int)
             rng_te = np.linspace((i+1)*1000, (i+2)*1000-1, 1000).astype(int)
             x_tr.append(data[rng_tr,:-1])
